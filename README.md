@@ -1,3 +1,13 @@
+npm run dev
+
+npm start
+
+curl -X GET -H "Content-Type: application/json" --request GET http://localhost:5000/api/v1/transactions ; echo
+
+curl -X POST -H "Content-Type: application/json" --request POST http://localhost:5000/api/v1/transactions/ --data '{"text":"Book2","amount":-20}' ; echo
+
+curl -X DELETE -H "Content-Type: application/json" --request DELETE http://localhost:5000/api/v1/transactions/id123 ; echo
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
